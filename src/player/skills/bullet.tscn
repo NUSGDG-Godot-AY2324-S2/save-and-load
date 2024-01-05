@@ -1,0 +1,61 @@
+[gd_scene load_steps=9 format=3 uid="uid://dduuoyve3xg67"]
+
+[ext_resource type="Script" path="res://player/skills/bullet.gd" id="1_cdxgv"]
+[ext_resource type="Texture2D" uid="uid://b52a2a2cpg87n" path="res://assets/NinjaAdventure/FX/Projectile/BigEnergyBall.png" id="1_yda51"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1c62t"]
+radius = 6.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rx8lb"]
+atlas = ExtResource("1_yda51")
+region = Rect2(0, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_edqpv"]
+atlas = ExtResource("1_yda51")
+region = Rect2(24, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_45bot"]
+atlas = ExtResource("1_yda51")
+region = Rect2(48, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f8fug"]
+atlas = ExtResource("1_yda51")
+region = Rect2(72, 0, 24, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3fdaf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rx8lb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_edqpv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_45bot")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f8fug")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Bullet" type="Area2D"]
+collision_layer = 0
+collision_mask = 6
+script = ExtResource("1_cdxgv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_1c62t")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+rotation = 1.57641
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_3fdaf")
+frame = 1
+frame_progress = 0.94409
+
+[connection signal="body_entered" from="." to="." method="_on_colliding_with_map"]
+[connection signal="body_entered" from="." to="." method="_on_colliding_with_enemy"]

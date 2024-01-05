@@ -1,0 +1,174 @@
+[gd_scene load_steps=4 format=3 uid="uid://bol2qvgryd8jw"]
+
+[ext_resource type="PackedScene" uid="uid://c5nvxt4l3gm4n" path="res://map/map.tscn" id="1_hpdeo"]
+[ext_resource type="PackedScene" uid="uid://mgabfdahuqyb" path="res://player/player.tscn" id="2_gyi7u"]
+[ext_resource type="PackedScene" uid="uid://sb0n06irob2v" path="res://enemy/enemy.tscn" id="3_jeib6"]
+
+[node name="Game" type="Node2D"]
+
+[node name="Map" parent="." instance=ExtResource("1_hpdeo")]
+
+[node name="Player" parent="." instance=ExtResource("2_gyi7u")]
+position = Vector2(92, 172)
+
+[node name="Enemy" parent="." instance=ExtResource("3_jeib6")]
+position = Vector2(251, 112)
+
+[node name="Enemy2" parent="." instance=ExtResource("3_jeib6")]
+position = Vector2(331, 262)
+
+[node name="Enemy3" parent="." instance=ExtResource("3_jeib6")]
+position = Vector2(565, 121)
+
+[node name="Enemy4" parent="." instance=ExtResource("3_jeib6")]
+position = Vector2(780, 116)
+
+[node name="Enemy5" parent="." instance=ExtResource("3_jeib6")]
+position = Vector2(837, 274)
+
+[node name="Enemy6" parent="." instance=ExtResource("3_jeib6")]
+position = Vector2(1022, 272)
+
+[node name="Enemy7" parent="." instance=ExtResource("3_jeib6")]
+position = Vector2(1103, 274)
+
+[node name="Enemy8" parent="." instance=ExtResource("3_jeib6")]
+position = Vector2(1385, 137)
+
+[node name="Enemy9" parent="." instance=ExtResource("3_jeib6")]
+position = Vector2(1384, 184)
+
+[node name="Enemy10" parent="." instance=ExtResource("3_jeib6")]
+position = Vector2(1382, 231)
+
+[node name="Enemy11" parent="." instance=ExtResource("3_jeib6")]
+position = Vector2(1381, 273)
+
+[node name="Enemy12" parent="." instance=ExtResource("3_jeib6")]
+position = Vector2(1657, 116)
+
+[node name="Enemy13" parent="." instance=ExtResource("3_jeib6")]
+position = Vector2(1798, 201)
+
+[node name="Enemy14" parent="." instance=ExtResource("3_jeib6")]
+position = Vector2(1787, 383)
+
+[node name="Enemy15" parent="." instance=ExtResource("3_jeib6")]
+position = Vector2(1778, 517)
+
+[node name="Enemy16" parent="." instance=ExtResource("3_jeib6")]
+position = Vector2(1534, 390)
+
+[node name="Enemy17" parent="." instance=ExtResource("3_jeib6")]
+position = Vector2(1534, 631)
+
+[node name="Enemy18" parent="." instance=ExtResource("3_jeib6")]
+position = Vector2(1531, 886)
+
+[node name="Enemy19" parent="." instance=ExtResource("3_jeib6")]
+position = Vector2(1778, 1146)
+
+[node name="Enemy20" parent="." instance=ExtResource("3_jeib6")]
+position = Vector2(1784, 1391)
+
+[node name="Enemy21" parent="." instance=ExtResource("3_jeib6")]
+position = Vector2(1781, 1591)
+
+[node name="Enemy22" parent="." instance=ExtResource("3_jeib6")]
+position = Vector2(1635, 1635)
+
+[node name="Enemy23" parent="." instance=ExtResource("3_jeib6")]
+position = Vector2(1464, 1641)
+
+[node name="Enemy24" parent="." instance=ExtResource("3_jeib6")]
+position = Vector2(1197, 1654)
+
+[node name="Enemy25" parent="." instance=ExtResource("3_jeib6")]
+position = Vector2(1181, 1486)
+
+[node name="Enemy26" parent="." instance=ExtResource("3_jeib6")]
+position = Vector2(1420, 1465)
+
+[node name="Enemy27" parent="." instance=ExtResource("3_jeib6")]
+position = Vector2(1178, 1130)
+
+[node name="Enemy28" parent="." instance=ExtResource("3_jeib6")]
+position = Vector2(1165, 876)
+
+[node name="Enemy29" parent="." instance=ExtResource("3_jeib6")]
+position = Vector2(1413, 698)
+
+[node name="Enemy30" parent="." instance=ExtResource("3_jeib6")]
+position = Vector2(1352, 397)
+
+[node name="Enemy31" parent="." instance=ExtResource("3_jeib6")]
+position = Vector2(1127, 384)
+
+[node name="Enemy32" parent="." instance=ExtResource("3_jeib6")]
+position = Vector2(1111, 568)
+
+[node name="Enemy33" parent="." instance=ExtResource("3_jeib6")]
+position = Vector2(765, 406)
+
+[node name="Enemy34" parent="." instance=ExtResource("3_jeib6")]
+position = Vector2(578, 406)
+
+[node name="Enemy35" parent="." instance=ExtResource("3_jeib6")]
+position = Vector2(359, 397)
+
+[node name="Enemy36" parent="." instance=ExtResource("3_jeib6")]
+position = Vector2(479, 559)
+
+[node name="Enemy37" parent="." instance=ExtResource("3_jeib6")]
+position = Vector2(95, 537)
+
+[node name="Enemy38" parent="." instance=ExtResource("3_jeib6")]
+position = Vector2(333, 921)
+
+[node name="Enemy39" parent="." instance=ExtResource("3_jeib6")]
+position = Vector2(530, 781)
+
+[node name="Enemy40" parent="." instance=ExtResource("3_jeib6")]
+position = Vector2(714, 981)
+
+[node name="Enemy41" parent="." instance=ExtResource("3_jeib6")]
+position = Vector2(927, 1384)
+
+[node name="Enemy42" parent="." instance=ExtResource("3_jeib6")]
+position = Vector2(730, 1197)
+
+[node name="Enemy43" parent="." instance=ExtResource("3_jeib6")]
+position = Vector2(130, 946)
+
+[node name="Enemy44" parent="." instance=ExtResource("3_jeib6")]
+position = Vector2(216, 994)
+
+[node name="Enemy45" parent="." instance=ExtResource("3_jeib6")]
+position = Vector2(79, 1441)
+
+[node name="Enemy46" parent="." instance=ExtResource("3_jeib6")]
+position = Vector2(495, 1673)
+
+[node name="Enemy47" parent="." instance=ExtResource("3_jeib6")]
+position = Vector2(575, 1470)
+
+[node name="Enemy48" parent="." instance=ExtResource("3_jeib6")]
+position = Vector2(1218, 1483)
+
+[node name="Enemy49" parent="." instance=ExtResource("3_jeib6")]
+position = Vector2(1255, 1480)
+
+[node name="Enemy50" parent="." instance=ExtResource("3_jeib6")]
+position = Vector2(1290, 1474)
+
+[node name="Enemy51" parent="." instance=ExtResource("3_jeib6")]
+position = Vector2(1327, 1469)
+
+[node name="Enemy52" parent="." instance=ExtResource("3_jeib6")]
+position = Vector2(1386, 92)
+
+[node name="Enemy53" parent="." instance=ExtResource("3_jeib6")]
+position = Vector2(1359, 1472)
+
+[node name="Enemy54" parent="." instance=ExtResource("3_jeib6")]
+position = Vector2(1388, 1472)
